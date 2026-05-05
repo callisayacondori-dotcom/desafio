@@ -1,0 +1,9 @@
+function exibirPatrocinadores() {
+    // Array com empresas parceiras
+    const patrocinadores = ['Amazon', 'Google', 'Microsoft', 'GitHub'];
+
+    // Laço para percorrer cada empresa
+    for (let i = 0; i < patrocinadores.length; i++) {
+        console.log(`Patrocinador Ouro: ${patrocinadores[i]}`);
+    }
+}
