@@ -1,0 +1,31 @@
+function conferirAlmoxarifado() {
+    // Laço de 1 a 10 para conferir as caixas
+    for (let caixa = 1; caixa <= 10; caixa++) {
+        // Ignorar caixas extraviadas
+        if (caixa === 5 || caixa === 8) {
+            console.log(`Caixa ${caixa} está extraviada. Pulando conferência.`);
+            continue; // Passa para a próxima iteração
+        }
+
+        // Interromper conferência se houver erro na caixa 9
+        if (caixa === 9) {
+            console.log("Erro encontrado na caixa 9! Interrompendo conferência.");
+            break; // Sai do laço
+        }
+
+        // Caso tudo esteja ok, confirmar a conferência
+        console.log(`Caixa ${caixa} conferida.`);
+    }
+}
+
+// ==========================
+// Executando os desafios
+// ==========================
+console.log("=== Desafio 1: Bilheteria ===");
+controlarBilheteria();
+
+console.log("\n=== Desafio 2: Mural de Patrocinadores ===");
+exibirPatrocinadores();
+
+console.log("\n=== Desafio 3: Almoxarifado ===");
+conferirAlmoxarifado();
